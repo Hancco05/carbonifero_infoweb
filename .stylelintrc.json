@@ -1,0 +1,28 @@
+{
+    "extends": "stylelint-config-standard"
+  }
+  
+  {
+    "tagname-lowercase": true,
+    "attr-lowercase": true,
+    "attr-value-double-quotes": true,
+    "doctype-first": true,
+    "head-req-title": true
+  }
+  
+  {
+    "name": "la-vida-del-carbonifero",
+    "version": "1.0.0",
+    "scripts": {
+      "verify": "npm run lint-js && npm run lint-css && npm run lint-html",
+      "lint-js": "eslint public/js/script.js",
+      "lint-css": "stylelint public/css/styles.css",
+      "lint-html": "htmlhint public/index.html"
+    },
+    "devDependencies": {
+      "eslint": "^7.32.0",
+      "stylelint": "^13.13.1",
+      "htmlhint": "^0.14.1"
+    }
+  }
+  

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadísticas del Carbonífero</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #4A90E2;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: 700;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #fff;
+      padding: 10px 0;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 5px 10px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #4A90E2;
+      border-bottom: 2px solid #4A90E2;
+    }
+
+    main {
+      width: 80%;
+      max-width: 1200px;
+      padding: 40px 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      color: #4A90E2;
+      font-size: 2em;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    section h3 {
+      color: #333;
+      font-size: 1.6em;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    section p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: auto;
+      font-size: 1em;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .content-block {
+      padding: 20px;
+      border-left: 5px solid #4A90E2;
+      background-color: #fafafa;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    .content-block p {
+      font-size: 1.1em;
+      color: #444;
+    }
+
+    .content-block h3 {
+      font-size: 1.4em;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        width: 90%;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Vida del Carbonífero</h1>
+  </header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="que-es.html">¿Qué es?</a>
+    <a href="cuando-comenzo.html">¿Cuándo comenzó?</a>
+    <a href="historia.html">Historia</a>
+    <a href="animales.html">Animales</a>
+    <a href="conclusion.html">Conclusión</a>
+  </nav>
+  <main>
+    <section>
+      <h2>Estadísticas del Carbonífero</h2>
+      <p>El Carbonífero es conocido no solo por sus vastos bosques y la abundancia de vida animal, sino también por los enormes depósitos de carbón que dejó como legado. Este período, que se extiende aproximadamente entre 359 y 299 millones de años, fue una época clave en la historia de la Tierra.</p>
+
+      <div class="chart-container">
+        <canvas id="carboniferoChart"></canvas>
+      </div>
+
+      <div class="info-box">
+        <h3>Flora del Carbonífero</h3>
+        <p>El Carbonífero fue una era marcada por una explosión de vegetación, sobre todo en zonas tropicales. Los bosques tropicales se extendían por todo el planeta, proporcionando el ambiente ideal para una gran variedad de organismos. Entre las plantas más destacadas de esta era se encuentran:</p>
+        <ul>
+          <li><strong>Plantas vasculares:</strong> Los helechos y las licofitas dominaron la vegetación del Carbonífero, constituyendo enormes bosques que eran los principales responsables de la producción de oxígeno en la atmósfera.</li>
+          <li><strong>Coníferas:</strong> Aparecieron por primera vez las coníferas, un tipo de planta que daría paso a las futuras especies de árboles modernos.</li>
+          <li><strong>Musgos y helechos gigantes:</strong> Estas plantas crecían a tamaños mucho mayores de lo que conocemos hoy, lo que facilitó la existencia de grandes insectos.</li>
+        </ul>
+      </div>
+
+      <div class="info-box">
+        <h3>Fauna del Carbonífero</h3>
+        <p>Durante el Carbonífero, la fauna experimentó una diversificación espectacular, con la aparición de especies animales que serían fundamentales en la historia de la evolución.</p>
+        <ul>
+          <li><strong>Insectos gigantes:</strong> Los niveles elevados de oxígeno en la atmósfera permitieron el crecimiento de insectos gigantes. Algunos alcanzaban tamaños descomunales, como la Libélula Meganeura que tenía una envergadura de hasta 75 cm.</li>
+          <li><strong>Primeros vertebrados terrestres:</strong> A finales del Carbonífero, los primeros vertebrados comenzaron a colonizar el suelo, con anfibios que aún dependían del agua para reproducirse.</li>
+          <li><strong>Reptiles primitivos:</strong> Se dieron los primeros pasos hacia la evolución de los reptiles, los antecesores de todos los vertebrados terrestres modernos.</li>
+        </ul>
+      </div>
+
+      <div class="info-box">
+        <h3>Impacto Geológico</h3>
+        <p>Además de la biodiversidad, el Carbonífero fue crucial en términos geológicos. Los enormes bosques tropicales que cubrían grandes extensiones de tierra contribuyeron a la formación de vastos depósitos de carbón que serían fundamentales para la industria humana en el futuro.</p>
+        <ul>
+          <li><strong>Formación de cuencas carboníferas:</strong> Estas formaciones geológicas resultaron en la acumulación de grandes cantidades de materia orgánica, que con el paso del tiempo se transformó en carbón.</li>
+          <li><strong>Clima cálido y húmedo:</strong> El clima predominante durante este período favoreció la expansión de los bosques y, como resultado, la atmósfera experimentó un aumento significativo en los niveles de oxígeno.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 La Vida del Carbonífero</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('carboniferoChart').getContext('2d');
+    const carboniferoChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Bosques Tropicales', 'Insectos Gigantes', 'Diversidad de Vida', 'Primeros Vertebrados', 'Depositos de Carbono'],
+        datasets: [{
+          label: 'Estadísticas del Carbonífero',
+          data: [80, 70, 90, 60, 100], // Estos son valores de ejemplo
+          backgroundColor: 'rgba(135, 206, 250, 0.6)', // Color de las barras
+          borderColor: 'rgba(135, 206, 250, 1)',    // Color del borde de las barras
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true // Asegura que el gráfico comience en 0 en el eje Y
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

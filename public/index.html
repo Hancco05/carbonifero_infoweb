@@ -5,62 +5,187 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Vida del Carbonífero</title>
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #4A90E2;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: 700;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #fff;
+      padding: 10px 0;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 1.1em;
+      padding: 5px 10px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #4A90E2;
+      border-bottom: 2px solid #4A90E2;
+    }
+
+    main {
+      width: 80%;
+      max-width: 1200px;
+      padding: 40px 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      color: #4A90E2;
+      font-size: 2em;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    section h3 {
+      color: #333;
+      font-size: 1.6em;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    section p {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: auto;
+      font-size: 1em;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .content-block {
+      padding: 20px;
+      border-left: 5px solid #4A90E2;
+      background-color: #fafafa;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    .content-block p {
+      font-size: 1.1em;
+      color: #444;
+    }
+
+    .content-block h3 {
+      font-size: 1.4em;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        width: 90%;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        padding: 8px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>La Vida del Carbonífero</h1>
   </header>
+  <nav>
+    <a href="que-es.html">¿Qué es?</a>
+    <a href="cuando-comenzo.html">¿Cuándo comenzó?</a>
+    <a href="historia.html">Historia</a>
+    <a href="animales.html">Animales</a>
+    <a href="estadisticas.html">Estadísticas</a>
+    <a href="conclusion.html">Conclusión</a>
+  </nav>
   <main>
-    <section id="que-es">
-      <h2>¿Qué es el Carbonífero?</h2>
-      <p>El Carbonífero es un período geológico dentro de la era Paleozoica que tuvo lugar entre hace aproximadamente 359 y 299 millones de años. Es conocido principalmente por la formación masiva de carbón a partir de la descomposición de extensos bosques tropicales, los cuales se desarrollaron en ambientes cálidos y húmedos. Este período es crucial para entender el desarrollo de los ecosistemas terrestres modernos y los cambios climáticos históricos que moldearon la Tierra.</p>
+    <section>
+      <h2>Bienvenido a la Era del Carbonífero</h2>
+      <p>Explora las maravillas de uno de los períodos más transformadores de la historia geológica de la Tierra.</p>
     </section>
-    <section id="cuando-comenzo">
-      <h2>¿Cuándo comenzó?</h2>
-      <p>El Carbonífero comenzó hace aproximadamente 359 millones de años, sucediendo al período Devónico, y se extendió hasta hace unos 299 millones de años, cuando dio paso al período Pérmico. Este período está dividido en dos épocas principales:</p>
-      <ul>
-        <li><strong>Carbonífero Inferior (Mississippiense):</strong> caracterizado por mares poco profundos y extensos arrecifes.</li>
-        <li><strong>Carbonífero Superior (Pennsylvaniense):</strong> marcado por el desarrollo de vastos pantanos y bosques tropicales que posteriormente se convirtieron en depósitos de carbón.</li>
-      </ul>
+
+    <section class="content-block">
+      <h3>¿Qué es el Carbonífero?</h3>
+      <p>El Carbonífero es una división del tiempo geológico que abarcó desde hace aproximadamente 359 hasta 299 millones de años. Durante este período, la Tierra experimentó un clima cálido y húmedo, con vastos pantanos y bosques que dieron lugar a enormes depósitos de carbono, de donde provienen los combustibles fósiles como el carbón.</p>
     </section>
-    <section id="historia">
-      <h2>Historia</h2>
-      <p>El Carbonífero es uno de los períodos más transformadores en la historia de la Tierra. Sus eventos clave incluyen:</p>
-      <ul>
-        <li><strong>Formación de Pangea:</strong> Los continentes de la Tierra comenzaron a unirse, creando el supercontinente Pangea. Este movimiento tectónico generó cadenas montañosas como los Apalaches y alteró significativamente los patrones climáticos globales.</li>
-        <li><strong>Gigantismo de artrópodos:</strong> Altos niveles de oxígeno en la atmósfera (hasta un 35%) permitieron que insectos y artrópodos crecieran a tamaños excepcionales, como libélulas con alas de más de 70 cm y milpiés de hasta 2 metros.</li>
-        <li><strong>Ecosistemas de pantanos:</strong> Las selvas tropicales cubrieron grandes extensiones de tierra, con plantas como licopodios gigantes y helechos arborescentes. Estos pantanos fueron el origen de los depósitos de carbón que conocemos hoy.</li>
-      </ul>
-      <p>En el océano, los tiburones primitivos y los peces óseos dominaron, mientras que en tierra los anfibios y los primeros reptiles comenzaron a diversificarse y a colonizar nuevos hábitats.</p>
+
+    <section class="content-block">
+      <h3>¿Cuándo comenzó y terminó la era Carbonífera?</h3>
+      <p>El Carbonífero comenzó hace unos 359 millones de años y terminó hace 299 millones de años. Este período se divide en dos subperíodos: el Misisípico y el Pensilvánico, siendo cada uno con características geológicas y biológicas distintas.</p>
     </section>
-    <section id="animales">
-      <h2>Animales que vivían</h2>
-      <p>La fauna del Carbonífero incluye una variedad de criaturas fascinantes:</p>
-      <ul>
-        <li><strong>Artrópodos gigantes:</strong> Insectos como la Meganeura (una libélula con una envergadura de hasta 70 cm) y el Arthropleura (un milpiés de 2 metros de largo).</li>
-        <li><strong>Anfibios dominantes:</strong> Estos animales habitaban tanto en agua como en tierra y eran los principales depredadores terrestres.</li>
-        <li><strong>Primeros reptiles:</strong> El Hylonomus es uno de los primeros reptiles conocidos, adaptado para reproducirse en tierra firme.</li>
-        <li><strong>Vida marina:</strong> Incluía tiburones primitivos y peces con características únicas, como aletas lobuladas que eventualmente darían lugar a los primeros tetrápodos.</li>
-      </ul>
+
+    <section class="content-block">
+      <h3>Animales y Flora del Carbonífero</h3>
+      <p>Durante el Carbonífero, la fauna y flora del planeta experimentaron una gran diversidad. Se desarrollaron los primeros insectos voladores y grandes anfibios, mientras que los bosques tropicales y pantanosos eran dominados por plantas como helechos y licófitas.</p>
     </section>
-    <section id="estadisticas">
-      <h2>Estadísticas</h2>
-      <ul>
-        <li><strong>Duración del Carbonífero:</strong> 60 millones de años.</li>
-        <li><strong>Niveles de oxígeno:</strong> Alcanzaron el 35%, significativamente más altos que el nivel actual.</li>
-        <li><strong>Depósitos de carbón:</strong> Más del 70% del carbón mundial se originó en este período.</li>
-        <li><strong>Gigantismo:</strong> Los insectos y artrópodos alcanzaron tamaños que nunca se volvieron a observar después.</li>
-        <li><strong>Clima:</strong> Predominantemente cálido y húmedo, con extensas áreas cubiertas por selvas tropicales y pantanos.</li>
-      </ul>
-    </section>
-    <section id="conclusion">
-      <h2>Conclusión</h2>
-      <p>El Carbonífero marcó un punto crucial en la evolución de la Tierra. Durante este período, se formaron los ecosistemas que dieron lugar a los depósitos de carbón que alimentaron la Revolución Industrial y continúan siendo una fuente clave de energía. Además, las innovaciones biológicas, como los primeros reptiles, sentaron las bases para la diversificación de la vida terrestre. Este período no solo transformó el planeta, sino que dejó un legado imborrable en su historia.</p>
+
+    <section class="content-block">
+      <h3>Importancia del Carbonífero en la Geología</h3>
+      <p>Este período fue clave en la formación de grandes depósitos de carbón, que más tarde jugarían un papel fundamental en la Revolución Industrial. Además, los fósiles encontrados en esta era nos han permitido aprender más sobre la vida prehistórica y las condiciones climáticas de la Tierra en ese entonces.</p>
     </section>
   </main>
   <footer>
     <p>&copy; 2024 La Vida del Carbonífero</p>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>

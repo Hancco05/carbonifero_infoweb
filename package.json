@@ -11,5 +11,12 @@
   "description": "",
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.17.0",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^16.12.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
   }
 }
